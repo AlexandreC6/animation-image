@@ -1,0 +1,40 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box-;
+  height: 100vh;
+  width: 100vw;
+  /* Enlever le scroll du au vh-vw */
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper--img {
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  /* Centrer en position relative */
+  left: 50%;
+  /* top: 50%; Mettre au centre */
+  top: 100%; /* Mettre en bas de la page */
+  /* Scale -> Réduire ou augmenter un élèment */
+  /* 0.5 => réduire de moitié */
+  transform: translate(-50%, -50%) scale(0.5); /* met le point de référence au milieu de la page */
+
+}
+
+.wrapper--img img {
+  height: 100%;
+  width: 100%;
+}
+
+.one {
+  transform: translate(-50%, -50%) scale(0.5) rotate(-10deg);
+}
+
+.two {
+}
+
+.three {
+  transform: translate(-50%, -50%) scale(0.5) rotate(10deg);
+}
